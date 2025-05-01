@@ -1,22 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stonehenge</title>
+  
+  <!-- Favicon estándar -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+  <link rel="shortcut icon" href="favico/favicon.ico">
+  
+  <!-- Iconos para dispositivos Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favico/android-chrome-192x192.png">
+  
+  <!-- Icono para dispositivos Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+  
+  <!-- Archivo manifest para compatibilidad con apps web progresivas -->
+  <link rel="manifest" href="favico/site.webmanifest">
 
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <!-- Archivos de p5.js -->
   <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
   <script language="javascript" type="text/javascript" src="Stonehenge.js"></script>
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 
   <style>
+
     body {
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
+      background-color: #121212;
+      color: white;
     }
+
+    #canvas-container {
+      margin-bottom: 20px; 
+    }
+    
   </style>
 </head>
 
 <body>
+  <div id="canvas-container"></div>   
 </body>
+
 </html>
